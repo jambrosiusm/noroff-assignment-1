@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent Marker');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+  scroll-padding-top: 4rem;
+}
+
+body {
+  background-color: #ffc40081;
+  font-family: 'Roboto', serif;
+  color: #000000;
+  text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Permanent Marker', serif;
+  color: #000000bf;
+  text-align: left;
+  font-size: 41px;
+}
+
+p, ul, table {
+  font-size: 21px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: #333;
+  position: fixed;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.side {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  flex: 30%;
+  background-color: #ffffffb5;
+  margin-top: 55px;
+  padding-left: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.address {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  font-size: 21px;
+  background-color:#ffc40081;
+
+}
+
+.address div { 
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.span-primary {
+  background: yellow;
+	}
+
+.span-secondary {
+  background: rgba(17, 234, 17, 0.495);
+}
+
+  @media screen and (max-width: 700px) {
+  .address {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    margin-top: 225px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    scroll-padding-top: 17rem;
+  }
+    }
